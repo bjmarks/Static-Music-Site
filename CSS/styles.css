@@ -1,0 +1,122 @@
+/*
+SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE 
+SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE 
+SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE SOLE
+Created by Techs4Marks.com
+Authors:  Luis Cavaosos - Template Support Designer 
+		  Wen Hernadez - Template Designer
+		  Benjamin Marks - Founder, Creator, Final Overseer
+Version 1.1.2
+*/
+*{margin: 0px; padding: 0px;}
+body{display: grid; height: 100vh; padding: 10px; grid-gap: 0px;}
+/* start Grid area naming of Elements/Classes/IDs*/
+header{ grid-area: header;}
+main{ grid-area: main;}
+aside{ grid-area: aside;}
+article{ grid-area: article;}
+section{ grid-area: section;}
+footer{ grid-area: footer; text-align: center;}
+::selection{background-color: rgba(230,50,50,.75);}
+.audioPlayer{ position: fixed; bottom: 15px;}
+div .scroll{ overflow: auto;}
+.center{margin: auto; padding: auto; text-align: center; vertical-align: center;}
+.disc{display: block; text-align: center; background: white; cursor:pointer; width: 50%; margin: auto; -webkit-transition: .5s; transition: .5s ease;}
+.disc p{ color: white; overflow: hidden; -webkit-transition: .3s; transition: .3s; height: 20px;}
+.disc:hover{background: royalblue; width: 100%; height:auto ; text-align: center;}
+.disc p:hover{color: black; width: 100%; height: 100%; text-align: center; margin: auto; overflow: scroll;}
+/* Strat background templates */
+/*.-bkgd{background: ;}
+.-bkgd{background: ;}
+.-bkgd{background: ;}*/
+.pnk-bkgd{background: pink;}
+.dpk-bkgd{background: deeppink;}
+.blv-bkgd{background: blueviolet;}
+.aqu-bkgd{background: aqua;}
+.rab-bkgd{background: royalblue;}
+.dcn-bkgd{background: darkcyan;}
+.dkb-bkgd{background: darkblue;}
+.cnf-bkgd{background: cornflowerblue;}
+.ctr-bkgd{background: chartreuse;}
+.cad-bkgd{background: cadetblue;}
+.bis-bkgd{background: bisque;}
+.cyn-bkgd{background: cyan;}
+.mag-bkgd{background: magenta;}
+.reb-bkgd{background: rebeccapurple;}
+.srg-bkgd{background: springgreen;}
+.aqm-bkgd{background: aquamarine;}
+.brn-bkgd{background: brown;}
+.tur-bkgd{background: turquoise;}
+.tan-bkgd{background: tan;}
+.stb-bkgd{background: steelblue;}
+.blu-bkgd{background: blue;}
+.gre-bkgd{background: green;}
+.lgr-bkgd{background: lightgreen;}
+.red-bkgd{background: red;}
+.yel-bkgd{background: yellow;}
+.vol-bkgd{background: violet;}
+.yeg-bkgd{background: yellowgreen;}
+.pur-bkgd{background: purple;}
+.bla-bkgd{background: black;}
+.gra-bkgd{background: gray;}
+.ora-bkgd{background: orange;}
+.sky-bkgd{background: skyblue;}
+.gradiant-rainbow-bkgd{background: linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);}
+/* Playlist templates */
+#playlist{ list-style: none;}
+#playlist li a{ color:black; text-decoration: none;}
+#playlist .current-song a{color:purple;}
+.current-song{ background-color: gray; color: white; text-decoration: none; text-shadow: 2px 2px 5px green;}
+ul li{font-size: 28px; text-align: center;}
+.tabs li { float: left; padding: 10px; background: lightblue; margin: 15px; list-style: none; text-align: center;}
+.tabs li:hover{background: white;}
+.tabs li a:hover{color: lightgreen;}
+.tabs li a{color: black; text-decoration: none; width: 100%;}
+.p-link { width: 100%; height:100%;}
+/*	galley	temp*/
+.galley{height: 250px;}
+.gallery{ display: none; margin: auto; width:50%;}
+.gallery img{height: 240px;}
+.prev, .next {cursor: pointer; position: absolute; top: 20%; width: auto; padding: 16px; margin-top: -22px; color: black; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0;}
+.next { right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8);}
+.text { color: #f2f2f2; text-decoration: none; font-size: 15px; padding: 8px 12px; position: relative; bottom: 5px; width: 100%; text-align: center;}
+.dot { cursor: pointer;  height: 15px;  width: 15px;  margin: 0 2px;  background-color: black; border-radius: 50%;  display: inline-block;  transition: .5s ease-out; }
+.dot:hover{background-color: white;}
+.dot:active{background: gray;}
+/*
+<div class="galley">
+<div class="gallery">
+ <img src="" style="width:100%">
+</div>
+<div class="gallery">
+ <img src="" style="width:100%">
+</div>
+<div class="gallery">
+ <img src="" style="width:100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+*/
+/* Strat class templates */
+.template1 { grid-template-areas:   "header header header header header header header header header header header header"
+								  	"main main main main main main main main aside aside aside aside"
+								  	"main main main main main main main main aside aside aside aside"
+								  	"main main main main main main main main aside aside aside aside"
+								  	"main main main main main main main main aside aside aside aside"
+								  	"main main main main main main main main aside aside aside aside"
+								  	"main main main main main main main main aside aside aside aside"
+								  	".  . article article article article article article . ."
+								  	".  . article article article article article article . ."
+								  	"section section section section section section . . . . . "
+								  	". . footer footer footer footer footer footer footer footer . ."; }
+/* @media Queryes begin Mobile*/
+/* @media Queryes begin tablet*/
+/* @media Queryes begin Laptops*/
+/* @media Queryes begin Desktop*/
